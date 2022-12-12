@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate</title>
+</head>
+<style>
+</style>
+<body>
+<h1><b>Máy tính demo</b></h1>
+<input id="One" type="number" placeholder="Nhập số thứ nhất" autofocus>
+<input id="Two" type="number" placeholder="Nhập số thứ hai">
+<br><br>
+<div>
+    <button id="Add" onclick="Add()">Cộng(+)</button>
+    <button id="Apart " onclick="Apart()">Trừ(-)</button>
+    <button id="Core" onclick="Core()">Nhân(X)</button>
+    <button id="Divide" onclick="Divide()">Chia(/)</button>
+</div>
+<h3><b>Kết quả :</b></h3>
+<p id="Result"></p>
+</body>
+<script>
+    function Add(){
+        let One = document.getElementById('One').value;
+        let Two = document.getElementById('Two').value;
+        let Result = Number(One)+Number(Two);
+        document.getElementById('Result').innerHTML=Result;
+    }
+    function Apart(){
+        let One = document.getElementById('One').value;
+        let Two = document.getElementById('Two').value;
+        let Result = Number(One)-Number(Two);
+        document.getElementById('Result').innerHTML=Result;
+    }
+    function Core(){
+        let One = document.getElementById('One').value;
+        let Two = document.getElementById('Two').value;
+        let Result = Number(One)*Number(Two);
+        document.getElementById('Result').innerHTML=Result;
+    }
+    function Divide(){
+        let One = document.getElementById('One').value;
+        let Two = document.getElementById('Two').value;
+        let Result = Number(One)/Number(Two);
+        document.getElementById('Result').innerHTML=Result;
+    }
+</script>
+</html>
