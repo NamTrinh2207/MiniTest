@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let number = [0,1,1,2,3,5,8,13,21,34,55,89,144];
+    document.writeln("arr = "+number);
+    let i = 1;
+    let result = 0;
+    while (i<number.length){
+        if (number[i]%5===0){
+            result=number[i]+result;
+        }i++;
+    }
+    document.writeln("</br>");
+    document.writeln("Tổng các số trong mảng %5 = "+result);
+</script>
